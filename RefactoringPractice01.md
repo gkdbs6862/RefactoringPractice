@@ -2,7 +2,7 @@
 
 > 다음 코드를 리팩토링 해보자.
 
-<pre><code>
+~~~
 void Refactoring()
 {
     if (playerTeam.GetTeamHPRate() > enemyTeam.GetTeamHPRate())
@@ -25,4 +25,26 @@ void Refactoring()
         }
     }
 }
-</code></pre>
+~~~
+
+
+> 내가 리팩토링 해본 코드
+
+<pre> <code>
+void Refactoring()
+    {
+        bool isPlayerTeamBigger = playerTeam.ActorList.Length >= enemyTeam.ActorList.Length;
+        if (playerTeam.GetTeamHPRate() > enemyTeam.GetTeamHPRate())
+        {
+            BattleSequenceInfo.m_isPlayerWin = true;
+        }
+        else if (playerTeam.GetTeamHPRate() < enemyTeam.GetTeamHPRate())
+        {
+            BattleSequenceInfo.m_isPlayerWin = false;
+        }
+        else
+        {
+            BattleSequenceInfo.m_isPlayerWin = isPlayerTeamBigger;
+        }
+    }
+</code> </pre>
