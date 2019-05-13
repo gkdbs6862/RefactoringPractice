@@ -2,7 +2,7 @@
 
 > 다음 코드를 리팩토링 해보자.
 
-~~~
+```C#
 void Refactoring()
 {
     if (playerTeam.GetTeamHPRate() > enemyTeam.GetTeamHPRate())
@@ -25,7 +25,7 @@ void Refactoring()
         }
     }
 }
-~~~
+```
 
 
 > 내가 리팩토링 해본 코드
