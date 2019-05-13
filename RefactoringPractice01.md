@@ -30,7 +30,7 @@ void Refactoring()
 
 > 내가 리팩토링 해본 코드
 
-~~~
+```C#
 void Refactoring()
     {
         bool isPlayerTeamBigger = playerTeam.ActorList.Length >= enemyTeam.ActorList.Length;
@@ -47,4 +47,4 @@ void Refactoring()
             BattleSequenceInfo.m_isPlayerWin = isPlayerTeamBigger;
         }
     }
-~~~
+```
