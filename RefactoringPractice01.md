@@ -104,8 +104,10 @@ void Refactoring()
 ```
 
 `isDraw` bool 변수를 만들어 각 팀의 HPRate가 같은지 비교하고  
-같다면 `isPlaterTeamBigger` bool 변수를 통해 각 팀의 크기를 비교한 값을 `BattleSequenceInfo.m_isPlayerWin` 에 넣어주고  
-다르다면 `hpBigger` bool 변수를 통해 각 팀의 HPRate를 비교한 값을 `BattleSequenceInfo.m_isPlayerWin` 에 넣어주는 것을 알 수 있다.  
+같다면 `isPlaterTeamBigger` bool 변수를 통해  
+각 팀의 크기를 비교한 값을 `BattleSequenceInfo.m_isPlayerWin` 에 넣어주고  
+다르다면 `hpBigger` bool 변수를 통해  
+각 팀의 HPRate를 비교한 값을 `BattleSequenceInfo.m_isPlayerWin` 에 넣어주는 것을 알 수 있다.  
 
 ---
 
